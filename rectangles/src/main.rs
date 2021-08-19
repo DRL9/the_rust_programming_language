@@ -19,6 +19,12 @@ impl Rectangle {
     }
 }
 
+impl<'a> Rectangle {
+    fn to_string(&self, extra: &'a str) -> &'a str {
+        extra
+    }
+}
+
 fn main() {
     let rect1 = Rectangle {
         width: 10,
